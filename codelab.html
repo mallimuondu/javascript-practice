@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        let mySelf = {
+            firstName: 'Malli',
+            lastName: 'Muondu',
+            friends: ['Nigel', 'Alvin', 'Onyango', 'Kalufa'],
+            yearOfBirth: 2010,
+            favortieQuat: 'Im selfish, impatient, and a little insecure. ...',
+            favoriteFood: ['Chips', 'pizza'],
+            favoriteGame: 'roblox'
+        }
+
+
+        let myBrother = {
+            firstName: 'Nesh',
+            lastName: 'Muondu',
+            friends: ['David', 'Toby', 'Onyango', 'Nathan'],
+            yearOfBirth: 2012,
+            favortieQuat: 'Dont cry because its over, smile because it happened.” ...',
+            favoriteFood: ['Chips', 'chapati'],
+            favoriteGame: 'MInion Masters'
+        }
+        let myFriend = {
+            firstName: 'Jastin',
+            lastName: 'kimema',
+            friends: ['David', 'Mathew', 'Luke', 'John'],
+            yearOfBirth: 2003,
+            favortieQuat: '“Dance like theres nobody watching, love like youll never be hurt, sing like theres nobody listening, and live like its heaven on earth.”',
+            favoriteFood: ['Chips', 'rice'],
+            favoriteGame: 'minkraft'
+        }
+
+        console.log(myFriend.firstName.favortieQuat);
+
+        // List of of objects
+        let listOfObjects = [mySelf, myBrother, myFriend];
+
+        listOfObjects.forEach(function(item, index, myArray) {
+            document.write(item.firstName + " " + item.lastName + "</br >");
+            document.write(item.yearOfBirth + "</br >");
+            document.write(item.favortieQuat + "</br > ");
+            document.write(item.friends + "</br>");
+            document.write(item.favoriteFood + "</br>");
+            document.write(item.favoriteGame + "</br> </br></br>  ")
+        })
+    </script>
+</body></html>

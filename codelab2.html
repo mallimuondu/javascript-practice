@@ -1,0 +1,119 @@
+<html>
+
+<head>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="row" id="demo">
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript">
+        //        create ObjectMercury
+        let planet1 = {
+            name: 'Mercury',
+            numberOfMoons: '0',
+            gravity: 3.7
+        }
+        //        create Object Venus
+        let planet2 = {
+            name: 'Venus',
+            numberOfMoons: '0',
+            gravity: 8.87
+        }
+        //        create Object Earth
+        let planet3 = {
+            name: 'Earth',
+            numberOfMoons: '1',
+            gravity: 9.807
+        }
+        //        create Object Mars
+        let planet4 = {
+            name: 'Mars',
+            numberOfMoons: '2',
+            gravity: 24.79
+        }
+        //        create Object Jupita
+        let planet5 = {
+            name: 'Jupita',
+            numberOfMoons: '79',
+            gravity: 24.79
+        }
+        //        create Object Uranus
+        let planet6 = {
+            name: 'Uranus',
+            numberOfMoons: '27 ',
+            gravity: 8.87
+        }
+
+        console.log(planet1)
+        //        looking for the planet1
+        console.log(planet2)
+        //        looking for the planet2
+        console.log(planet3)
+        //        looking for planet3
+        console.log(planet4)
+        //        looking for the planet4
+
+        console.log(planet5)
+        //        looking for the planet5
+
+        console.log(planet6)
+        //        looking for the planet6
+
+
+
+        //we are creating a list
+        let planets = [planet1, planet2, planet3, planet4, planet5, planet6];
+
+        console.log(planets);
+        console.log('-----------------------------------------');
+
+
+        // Get the div where you want to show the list of cards
+        let demo = document.getElementById('demo');
+
+        // The forEach()  
+        planets.forEach(showPlanet);
+
+        /*
+        // Create a method that takes in three parameters
+        // This method will be called in the forEach 
+        //we are calling Each planet
+        */
+
+        //Doing a function
+        function showPlanet(item, index, array) {
+
+            //Creating an element
+            let insideDiv = document.createElement('div');
+            insideDiv.className = 'col-md-3';
+
+
+            console.log(item.name);
+            console.log(item.howManyMoons);
+            console.log(item.howFarIsTheSunInKm);
+            console.log(item.whatPlanetInTheSolarSystem);
+            console.log('');
+3
+            // Create the HTML CONTENT THAR WILL CNTAIN THE CARDS
+          
+
+
+
+            insideDiv.innerHTML = thecarCardHtml;
+
+
+            demo.append(insideDiv)
+        }
+    </script>
+</body>
+
+</html>

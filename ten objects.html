@@ -1,0 +1,127 @@
+<html>
+
+<head>
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div id="car" class="row"></div>
+    </div>
+    <script type="text/javascript">
+ 
+        car1 = {
+            make: 'subaru',
+            model: 'baja',
+            yearManufactctara: '1989',
+            price: '$22,545 ',
+            speed: '60 mph',
+            town: 'California'
+        }
+        car2 = {
+            make: 'bmw',
+            model: '4series',
+            yearManufactctara: 'mid-2013',
+            price: '$22,545 ',
+            speed: '60 mph',
+            town: 'Florida'
+        }
+
+        car3 = {
+            make: 'lambogini',
+            model: 'aventador',
+            yearManufactctara: 'February 2011–2017',
+            price: '$459,900 ',
+            speed: '220 mph ',
+            town: 'Texas'
+        }
+        car4 = {
+            make: 'Land Rover',
+            model: 'discovari',
+            yearManufactctara: '2013',
+            price: '$34,988 ',
+            speed: '	130  mph ',
+            town: 'Hawaii'
+        }
+        car5 = {
+            make: 'Honda Odyssey',
+            model: 'odyessey',
+            yearManufactctara: '1948',
+            price: '$35,255 ',
+            speed: '	130  mph ',
+            town: 'Pennsylvania'
+        }
+        car6 = {
+            make: 'Ferrari ',
+            model: ' 488 GTB',
+            yearManufactctara: '1939',
+            price: '$366,000 ',
+            speed: '	208 mph   ',
+            town: 'New Jersey'
+
+        }
+
+        car7 = {
+            make: 'jeep ',
+            model: ' Commander',
+            yearManufactctara: '1987',
+            price: '$11,814 ',
+            speed: '	65 mph   ',
+            town: 'Arizona'
+
+        }
+        car8 = {
+            make: 'ford ',
+            model: ' gt',
+            yearManufactctara: '2005',
+            price: '304,888 ',
+            speed: '	216 mph   ',
+            town: 'New York'
+
+        }
+
+
+        var carElement = document.getElementById('car');
+
+        function showcar(item, index, array) {
+            console.log(item.make);
+            console.log(item.model);
+            console.log(item.yearManufactctara );
+            console.log(item.price);
+            console.log(item.speed);
+            console.log(item.town);
+            ;
+           
+ // CREATE THE COLUMN ELEMENT
+            var ourColumnElement = document.createElement('div');
+
+            // Add the class name col-md-3
+            ourColumnElement.className = 'col-md-3';
+
+            let theCarAsAString = `  
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">${item.make}</h5>
+                        <p class="card-text">${item.model}</p>
+                        <p class="card-text">${item.yearManufactctara}</p>
+                        <p class="card-text">${item.price}</p>
+                        <p class="card-text">${item.speed}</p>
+                        <p class="card-text">${item.town}</p>
+                        
+                      
+                    </div>
+                </div>
+
+                `;
+            
+            ourColumnElement.innerHTML = thecarCardAsAString;
+            myfriendsElement.append(ourColumnElement);
+
+        }
+        
+        let car = [car1,car2,car3,car4,car5,car6,car7,car8];
+        car.forEachfunction;
+    </script>
+</body>
+
+</html>

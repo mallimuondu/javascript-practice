@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div id="friends" class="row"></div>
+    </div>
+    <script type="text/javascript">
+        friend1 = {
+            name: 'Josh',
+            lastname: 'Kshana',
+            yearOfBirth: '2008',
+            email: 'Josh@gmail.com',
+            phoneNumber: '07223345678',
+            town: 'Westlands',
+            citizenship: 'Kenyan'
+            
+        }
+        friend2 = {
+            name: 'Jastin',
+            lastname: 'Gitao',
+            yearOfBirth: '2012',
+            email: 'Jastin@gmail.com',
+            phoneNumber: '0712345678',
+            town: 'Westlands',
+            citizenship: 'Kenyan'
+        }
+        friend3 = {
+            name: 'Alvin',
+            lastname: 'Chesire',
+            yearOfBirth: '2009',
+            email: 'Alvin@gmail.com',
+            phoneNumber: '0798765432',
+            town: 'Westlands',
+            citizenship: 'Kenyan'
+        }
+        friend4 = {
+            name: 'Kalufa',
+            lastname: 'Kamata',
+            yearOfBirth: '2009',
+            email: 'Kalufa@gmail.com',
+            phoneNumber: '07456976345',
+            town: 'Westlands',
+            citizenship: 'Kenyan'
+        }
+        friend5 = {
+            name: 'Whayen',
+            lastname: 'Rigan',
+            yearOfBirth: '2009',
+            email: 'Whayen@gmail.com',
+            phoneNumber: '0798765456789',
+            town: 'Thika',
+            citizenship: 'Kenyan'
+        }
+
+
+        var myfriendsElement = document.getElementById('friends');
+
+        function showFriends(item, index, array) {
+            console.log(item.name);
+            console.log(item.lastname);
+            console.log(item.yearOfBirth);
+            console.log(item.email);
+            console.log(item.phoneNumber);
+            console.log(item.town);
+            console.log(item.citizenship);
+            console.log('');
+            console.log(2019-item.yearOfBirth)
+
+            // CREATE THE COLUMN ELEMENT
+            var ourColumnElement = document.createElement('div');
+
+            // Add the class name col-md-3
+            ourColumnElement.className = 'col-md-3';
+
+            let theFriendsCardAsAString = `  
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">${item.name}</h5>
+                        <p class="card-text">${item.lastname}</p>
+                        <p class="card-text">${item.yearOfBirth}</p>
+                        <p class="card-text">${item.email}</p>
+                        <p class="card-text">${item.phoneNumber}</p>
+                        <p class="card-text">${item.town}</p>
+                        <p class="card-text">${item.citizenship}</p>
+                      
+                    </div>
+                </div>
+
+                `;
+            
+            ourColumnElement.innerHTML = theFriendsCardAsAString;
+            myfriendsElement.append(ourColumnElement);
+
+        }
+        
+        let friends = [friend1, friend2, friend3, friend4, friend5];
+        friends.forEach(showFriends);
+    </script>
+</body>
+
+</html>
