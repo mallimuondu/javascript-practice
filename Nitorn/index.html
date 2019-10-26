@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>varibles</title>
+</head>
+
+<body>
+    <p>input1</p>
+    <input id="one">
+    <p id="resalt"></p>
+
+
+
+    <button onclick="sqrt()">sqrt</button>
+    <script>
+        function sqrt() {
+            // an if statement to chek if  square root button is clicked
+            var a = document.getElementById("one").value;
+
+
+            document.getElementById("resalt").innerHTML = Math.sqrt(a);
+
+        }
+    </script>
+
+</body></html>
