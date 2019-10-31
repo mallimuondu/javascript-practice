@@ -1,0 +1,28 @@
+<html>
+<head>
+    <body>
+        <p>click the button to get a time based greating</p>
+        <button onclick="time()">try it</button>
+        <p id="demo"></p>
+    <script>
+   function time () {
+       var greating;
+       var time = new Date().getHours();
+       if (time < 10){
+greating="good morning";
+       }else if (time<20){
+           greating = "good day"
+       }
+       else{
+           greating = "good evenig"
+       }
+       document.getElementById("demo").innerHTML = greating;
+   }
+        
+        </script>
+    </body>    
+</head>
+</html>
+
+
+
